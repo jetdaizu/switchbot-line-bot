@@ -32,7 +32,7 @@ app.post('/webhook', async (req, res) => {
             {
               headers: {
                 'Content-Type': 'application/json; charset=utf8',
-                'Authorization': `Bearer ${SWITCHBOT_TOKEN}`
+                'Authorization': SWITCHBOT_TOKEN
               }
             }
           )

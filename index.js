@@ -23,7 +23,7 @@ app.post('/webhook', async (req, res) => {
       if (userMessage === 'お風呂入れて') {
         try {
           await axios.post(
-            `https://api.switch-bot.com/v1.1/devices/${DEVICE_ID}/commands`,
+            `https://api.switch-bot.com/v1.0/devices/${DEVICE_ID}/commands`,
             {
               command: 'turnOn',
               parameter: 'default',

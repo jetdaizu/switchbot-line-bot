@@ -20,7 +20,7 @@ app.post('/webhook', async (req, res) => {
       const userMessage = event.message.text
 
       // 「スイッチオン」と送信されたらSwitchBotをONにする
-      if (userMessage === ‘お風呂入れて’) {
+      if (userMessage === 'お風呂入れて') {
         try {
           await axios.post(
             `https://api.switch-bot.com/v1.1/devices/${DEVICE_ID}/commands`,
@@ -36,7 +36,7 @@ app.post('/webhook', async (req, res) => {
               }
             }
           )
-          await replyMessage(event.replyToken, ‘お湯張りを開始しました！’)
+          await replyMessage(event.replyToken, 'お湯張りを開始しました！')
         } catch (error) {
           console.error(error)
           await replyMessage(event.replyToken, 'エラーが発生しました。')

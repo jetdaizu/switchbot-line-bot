@@ -9,7 +9,8 @@ app.use(bodyParser.json())
 const LINE_ACCESS_TOKEN = '+7L52SeF0516khcX8iF6Od9nyQRDumxddUNDtHQZ6kTGsy2J5XLnDPIaAVBcrNDblSBYOFDGEegaKoAaL9MO54Zz3s9PcBiCwrh26MzbpFwVzgrzV9qgbxR2AbmgCXbNqXWnUm5lYnW7/T1ojDdX3gdB04t89/1O/w1cDnyilFU=';
 const SWITCHBOT_TOKEN = 'febf9039bbd130fced0856e89d11d14de7bead2b60e15bc2fac3e7e17c94635cfeb39644c2c0591f7c6441cf578e18f7';
 const DEVICE_ID = 'C13635300732';
-const OPENAI_API_KEY = 'sk-proj-P-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'; // 必ずGitHubにはプッシュしない！
+require('dotenv').config();
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY; // `.env` から読み込むように修正
 // ==================================================================
 
 // LINE Webhookエンドポイント

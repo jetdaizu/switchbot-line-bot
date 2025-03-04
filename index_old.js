@@ -7,7 +7,7 @@ app.use(bodyParser.json())
 
 // ===== あなたの情報を設定（必ず新しいトークンを発行して置き換えてください） =====
 const LINE_ACCESS_TOKEN = '+7L52SeF0516khcX8iF6Od9nyQRDumxddUNDtHQZ6kTGsy2J5XLnDPIaAVBcrNDblSBYOFDGEegaKoAaL9MO54Zz3s9PcBiCwrh26MzbpFwVzgrzV9qgbxR2AbmgCXbNqXWnUm5lYnW7/T1ojDdX3gdB04t89/1O/w1cDnyilFU='
-const SWITCHBOT_TOKEN = 'febf9039bbd130fced0856e89d11d14de7bead2b60e15bc2fac3e7e17c94635cfeb39644c2c0591f7c6441cf578e18f7'
+const SWITCHBOT_TOKEN = 'febf9039bbd130fced0856e89d11d14de7bead2b60e15bc2fac3e7e17c94635c5acbbd2f59796d2ab65ff0de10ec31ca'
 const DEVICE_ID = 'C13635300732' // 例: "0123456789ABCDEF"
 // ==================================================================
 

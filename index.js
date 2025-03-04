@@ -36,7 +36,7 @@ app.post('/webhook', async (req, res) => {
               }
             }
           )
-          await replyMessage(event.replyToken, ‘お湯張りを開始しました！’)
+          await replyMessage(event.replyToken, 'お湯張りを開始しました！')
         } catch (error) {
           console.error(error)
           await replyMessage(event.replyToken, 'エラーが発生しました。')
